@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            display: inline-block;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            display: inline-block;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            display: inline-block;
+        }
+
+        .box4 {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            display: inline-block;
+            position: relative;
+        }
+
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+            display: inline-block;
+
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        /*  박스 4는 박스 3 옆에 있음. 부모를 relative 잡고 자식을 absolute로 잡으면
+        자식은 부모 위에서 그려진다. 문법.
+        
+        
+        */
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4">
+        <div class="box5"></div>
+
+    </div>
+    <!-- 박스 4안에 박스5가 있다. 박스4 는 박스 5의 부모. 
+    자식을 먼저 그려야 부모의 상대 위치를 그릴 수 있음.-->
+
+</body>
+
+</html>
