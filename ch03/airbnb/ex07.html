@@ -6,6 +6,19 @@
         .grid-container {
             background-color: #2196F3;
             padding: 10px;
+
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+
+            /* grid-column-gap: 10px;
+            grid-row-gap: 10px; */
+            /*grid-column-gap 열 사이에 공간을 만듬
+            grid-row-gap 행 사이에 공간을 만들어줌 
+            grid-gap 는 한꺼번에 줌 */
+            /* 1fr은 비율 
+            1fr 1fr 1fr 갯수에 따라서 열 개수가 만들어짐. */
         }
 
         .grid-item {
@@ -13,6 +26,25 @@
             border: 1px solid rgba(0, 0, 0, 0.8);
             padding: 20px;
             font-size: 30px;
+        }
+
+        .g9 {
+            color: red;
+            grid-column: 1/3;
+            grid-row: 1/2;
+
+            /* grid-column-start: 1;
+            grid-column-end: 5; */
+
+
+            /*grid-column-start: 1;
+            grid-column-end: 2 ;
+            이거는 첫번쨰칸부터 두번쨰 칸까지 공간을 차지한다.그래서 블록에서는 한칸만 차지한다.
+            grid-column-end: 2 span; 은 1부터 2칸을 차지한다는 의미. 
+            그냥  grid-column: 1/3; 이렇게 쓰면 편함
+
+
+ */
         }
     </style>
 </head>
@@ -22,17 +54,17 @@
     <h1>Grid Elements</h1>
 
     <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
+        <div class="grid-item g1">1</div>
+        <div class="grid-item g2">2</div>
+        <div class="grid-item g3">3</div>
+        <div class="grid-item g4">4</div>
+        <div class="grid-item g5">5</div>
+        <div class="grid-item g6">6</div>
+        <div class="grid-item g7">7</div>
+        <div class="grid-item g8">8</div>
+        <div class="grid-item g9">9</div>
     </div>
-
+    <!-- 배치의 기본은 부모가 있어야됨. 부모로 자식을 감쌌다. -->
 </body>
 
 </html>

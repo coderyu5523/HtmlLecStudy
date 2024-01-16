@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            justify-content: space-evenly;
+
+        }
+
+        .menu li {
+            list-style-type: none;
+        }
+
+        /* 메뉴 내부의 li 지정 
+        list-style-type: none;
+        하면 리스트의 쩜 사라짐. 나중에 쩜 대신 버튼 넣어서 클릭할 수 있게 하면 됨
+*/
+
+        .nav {
+            display: grid;
+            grid-template-columns: auto auto;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="home">홈</div>
+        <ul class="menu">
+            <li>아우터</li>
+            <li>바지</li>
+            <li>악세사리</li>
+            <li>신발</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

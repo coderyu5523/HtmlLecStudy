@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        .outer-box {
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+            display: grid;
+
+            grid-template-columns: auto auto auto;
+            /* 50%씩 잡음. 오토로 하면 정렬할 때 빈공간 자동으로 설정됨
+         */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            justify-content: space-between;
+
+            /* space - 이거를 사용하려면 1fr 로 하면 사이즈가 정해지기 때문에 사용할 수 없음
+            그래서 auto 사용해야됨.
+             */
+        }
+
+        /* 자식을 각각 정렬하려면 부모가 그만큼 있어야됨 */
+
+        .inner-box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .inner-box2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .inner-box3 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="outer-box">
+        <div class="inner-box1">1</div>
+        <div class="inner-box2">2</div>
+        <div class="inner-box3">3</div>
+    </div>
+</body>
+
+</html>
