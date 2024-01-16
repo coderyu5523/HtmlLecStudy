@@ -2,60 +2,68 @@
 <html lang="en">
 
 <head>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
     <style>
         .main {
-            padding: 0 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             position: relative;
-        }
-
-        body {
-            background-image: url("img\\vacation.jpg");
-            height: 1000px;
-            background-size: contain;
         }
 
         .nav {
             display: grid;
             grid-template-columns: auto auto auto;
             justify-content: space-between;
-        }
-
-        .search {
-            display: grid;
-            position: relative;
-
-        }
-
-        .icon-search {
-            display: grid;
             position: absolute;
-            top: 25px;
-            right: 40px;
-
+            z-index: 2;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 30px;
 
         }
+
 
         .contants {
             display: grid;
             grid-template-columns: auto auto auto auto;
             justify-content: space-between;
-            grid-column-gap: 20px;
+            grid-column-gap: 30px;
+        }
+
+
+
+        .left {
+            background-image: url("img\\vacation.jpg");
+            height: 880px;
+            background-size: 100% 100%;
+            position: relative;
+            z-index: 1;
 
         }
 
-        .box {
-            display: grid;
-            height: 1000px;
-            width: 800px;
+        .right {
+            height: 800px;
             background-color: #F8ECEB;
+            ;
+            z-index: 1;
+            font-size: 50px;
+            text-align: start;
+            display: grid;
+            align-items: center
+        }
 
+
+        .icon-search {
+            display: grid;
+            position: absolute;
+            top: 25px;
+            right: 70px;
+            z-index: 2
         }
     </style>
-
-
-
 
 </head>
 
@@ -63,9 +71,11 @@
     <div class="main">
 
         <div class="nav">
-            <div class="logo">
-                <h2>zuzu.</h2>
+
+            <div class="top-left">
+                <h1>zuzu.</h1>
             </div>
+
             <div class="contants">
                 <div>
                     <h4>about</h4>
@@ -79,11 +89,27 @@
                 <div>
                     <h4>contact</h4>
                 </div>
+
+
             </div>
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass icon-search"></i>
-                <h3>ENG</h3>
+
+            <div class="top-right">
+                <div> <i class="fa-solid fa-magnifying-glass icon-search"></i></div>
+                <div>
+                    <h3>ENG</h3>
+                </div>
             </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="left"></div>
+        <div class="right">
+            <h1>New <br>collection</h1>
         </div>
 
     </div>

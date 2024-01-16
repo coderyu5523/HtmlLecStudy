@@ -1,0 +1,56 @@
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px;
+
+    }
+
+
+    .contants {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-between;
+        grid-column-gap: 30px;
+    }
+
+
+
+    .left {
+        background-image: url("D:\\workspace\\html_lec\\ch03\\example\\zuzu\\img\\vacation.jpg");
+        height: 880px;
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    .right {
+        height: 800px;
+        background-color: #F8ECEB;
+        ;
+        z-index: 1;
+        font-size: 50px;
+        text-align: start;
+        display: grid;
+        align-items: center
+    }
+
+
+    .icon-search {
+        display: grid;
+        position: absolute;
+        top: 25px;
+        right: 70px;
+        z-index: 2
+    }
