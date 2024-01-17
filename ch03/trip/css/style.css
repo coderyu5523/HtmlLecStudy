@@ -1,0 +1,77 @@
+        /* 패딩이나 마진은 각 박스의 고유값으로 넣지말고 이렇게 따로 만든 다음에 필요할 때 사용하면 됨. 
+        그리고 클래스 이름 옆에 적으면 됨. 그래야 재사용이 가능함.*/
+        .mt-10 {
+            margin-top: 10px;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+        .mb-5 {
+            margin-bottom: 5px;
+        }
+
+
+
+        .main {
+            background-color: rgb(232, 232, 232);
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-body {
+            width: 700px;
+            text-align: center;
+        }
+
+        .section-title {
+            color: rgb(238, 147, 147);
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            font-size: 12px;
+        }
+
+        .section-img {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column-gap: 10px;
+        }
+
+        .img-item>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        /* 사진 사이즈 맞추기 */
+
+
+        .img-item {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 글자를 중간으로 보내려면 부모를 기준으로 변경해야됨. */
+
+        .item-name {
+            position: absolute;
+            color: white;
+        }
+
+        .btn-detail {
+            background-color: rgb(225, 130, 121);
+            border-radius: 6px;
+            color: white;
+            height: 30px;
+            width: 200px;
+
+        }
+
+        /* 마진이나 패딩은  */

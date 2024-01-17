@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .flex-item-left {
+            background-color: #f1f1f1;
+            padding: 10px;
+            flex: 1;
+        }
+
+        .flex-item-right {
+            background-color: dodgerblue;
+            padding: 10px;
+            flex: 1;
+        }
+
+        /* Responsive layout - makes a one column-layout instead of two-column layout */
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .flex-item-right {
+                background-color: red;
+            }
+        }
+
+        /* 함수같은 기능. 가로길이가 800px 이하면 row에서 column으로 변경됨.
+        @media 쿼리  
+        flex-wrap : wrap 을 사용하면 부모 크기에 맞춰서 자식도 정렬됨.
+        nowrap 으로 하면 자식의 width가 안먹음.  
+        사진의 비율을 맞출때 width 길이를 두고 wrap 을 두면 가로 길이를 줄이면 부모 크기내에서 아래로 정렬됨
+        그래서 사진 같은거를 넣을 때flex : 1 로 하면 가로 길이를 줄이면 가로 비율에 맞추기 때문에 사진이 찌그러짐.그래서
+        wrap 을 쓰고 가로 길이를 지정함.
+        
+        반응형 쓰고 싶다면 부모 박스 크기를 % 로 설정.
+         말고 일반형으로 하고 싶다면 부모 박스의 크기를 고정하면 됨.*/
+    </style>
+</head>
+
+<body>
+
+
+    <div class="flex-container">
+        <div class="flex-item-left">1</div>
+        <div class="flex-item-right">2</div>
+    </div>
+
+</body>
+
+</html>
